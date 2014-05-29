@@ -1,7 +1,12 @@
 <header class="header" role="banner">
     <div class="vertical-theme-header">
       <div class="inner-theme-header">
-        <h1 class="blog-title">Nichole Dwight</h1>
+        <!-- Title -->
+        <h1>
+            <a href="{{@blog.url}}" rel="nofollow" class="header-title">{{@blog.title}}</a>
+        </h1>
+        <a href="#" class="theme-button">Blog</a>
+        <a href="{{@blog.url}}/portfolio" class="theme-button">Portfolio</a>
       </div>
     </div>
 
@@ -14,13 +19,9 @@
             </div>
         {{/if}}
 
-        <!-- Title -->
-        <div id="site-title" class="h1">
-            <a href="{{@blog.url}}" rel="nofollow">{{@blog.title}}</a>
-        </div>
 
-        <!-- Static Menu (Dynamic menu not yet available in Ghost 0.3) -->
-        {{> navigation}}
+
+
 
     </div> <!-- end #inner-header -->
 
