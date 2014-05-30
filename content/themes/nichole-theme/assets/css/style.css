@@ -542,6 +542,14 @@ html {
   max-width: 700px;
   margin: 0px auto;
   text-align: center; }
+.home-template .theme-header-divider {
+  width: 50%;
+  margin: 20px auto;
+  border-top: 1px solid rgba(255, 255, 255, 0.14); }
+.home-template .small-header-divider {
+  width: 25%;
+  margin: 20px auto;
+  border-top: 1px solid rgba(255, 255, 255, 0.14); }
 .home-template .header-title {
   text-decoration: none;
   color: #3A4145; }
