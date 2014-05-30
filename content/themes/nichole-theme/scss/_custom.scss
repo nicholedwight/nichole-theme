@@ -106,30 +106,6 @@ nav {
   }
 }
 
-#content {
-  position: relative;
-  width: 85%;
-  height: 100%;
-  margin-bottom: 0rem;
-  float: right;
-  display: table;
-  background: #F2EFE8;
-}
-
-.inner-content {
-  margin-left: 16%;
-  height: 100%;
-}
-
-.footer {
-  position: relative;
-  bottom: 0;
-}
-
-.footer-content {
-  position: absolute;
-}
-
 #social-navigation {
   position: absolute;
   bottom: 0px;
@@ -171,6 +147,36 @@ nav {
   a:hover {
     opacity: 1;
   }
+}
+
+#content {
+  position: relative;
+  width: 85%;
+  height: 100%;
+  float: right;
+  display: table;
+  background: #F2EFE8;
+}
+
+.inner-content {
+  height: 100%;
+}
+
+article:nth-of-type(even) {
+  background: purple;
+}
+
+.post-content {
+  margin-left: 10%;
+}
+
+.footer {
+  position: relative;
+  bottom: 0;
+}
+
+.footer-content {
+  position: absolute;
 }
 
 .copyright {
