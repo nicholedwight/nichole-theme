@@ -27,6 +27,7 @@
 
     <!-- Include the main stylesheet-->
     <link rel="stylesheet" id="linen-stylesheet-css" href="{{asset 'css/style.css'}}" type="text/css" media="all" />
+    <link rel="stylesheet" href="{{asset/css/foundation-icons.css}}" type="text/css"/>
 
     <!--[if lt IE 9]>
     <link rel='stylesheet' id='linen-ie-only-css'  href="{{asset 'css/ie.css'}}" type='text/css' media='all' />
@@ -47,7 +48,7 @@
         {{> header}}
 
         <!-- Static Menu (Dynamic menu not yet available in Ghost 0.3) -->
-        {{> navigation}}
+        {{> sidebar}}
 
         <section id="content">
 
@@ -60,19 +61,17 @@
                     {{{body}}}
                 </main> <!-- end #main -->
 
-                {{! The sidebar fills in the remaining four columns }}
-                <aside id="sidebar-main" class="sidebar fourcol clearfix" role="complementary">
-                    {{> sidebar}}
-                </aside>
 
             </div> <!-- end #inner-content -->
 
         </section> <!-- end #content -->
 
+
         <footer class="footer" role="contentinfo">
-            <div id="inner-footer" class="wrap clearfix">
-                <!-- <p class="source-org copyright">© 2013 <a href="http://themespectre.com">Theme Spectre, LLC.</a></p> -->
-            </div> <!-- end #inner-footer -->
+          <div class="footer-content">
+
+            
+          </div>
         </footer> <!-- end footer -->
 
 
