@@ -576,19 +576,23 @@ html {
 
 #personal-logo {
   display: block;
-  margin: 15px auto; }
+  margin: 45px auto; }
 
 nav ul {
   margin: 0 auto;
   text-align: center;
   width: 100%;
-  margin-top: 20%; }
-  nav ul a {
-    color: #7C8188;
-    text-decoration: none; }
-  nav ul a:hover {
-    color: #FFF;
-    cursor: pointer; }
+  margin-top: 30%; }
+  nav ul li {
+    margin-bottom: 10px; }
+    nav ul li a {
+      color: #7C8188;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 1.2em; }
+    nav ul li a:hover {
+      color: #FFF;
+      cursor: pointer; }
 
 #social-navigation {
   position: absolute;
@@ -693,7 +697,7 @@ article {
   bottom: 0;
   width: 100%;
   text-align: center;
-  height: 80px;
+  height: 60px;
   padding-top: 15px; }
 
 .page-number {
