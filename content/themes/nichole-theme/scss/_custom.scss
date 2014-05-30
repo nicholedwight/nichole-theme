@@ -1,5 +1,7 @@
 $body-color: #3A4145;
-$background: #1C2024;
+// $background: #1C2024;
+$background: darken(#39CFAA, 5%);
+$published: #F3615F;
 
 body {
   height: 100%;
@@ -79,6 +81,7 @@ html {
   width: 15%;
   height: 100%;
   position: relative;
+  background: $background;
 }
 
 #personal-logo {
@@ -98,7 +101,7 @@ nav {
       margin-bottom: 10px;
 
       a {
-        color: #7C8188;
+        color: #F2EFE8;
         text-decoration: none;
         text-transform: uppercase;
         font-size: 1.2em;
@@ -168,18 +171,22 @@ nav {
 }
 
 article:nth-of-type(even) {
-  background: #343434;
+  background: #455466;
   color: #F2EFE8;
 }
 
+article:nth-of-type(odd) {
+  background: #F2EFE8;
+}
+
 article {
-  min-height: 300px;
+  min-height: 200px;
 }
 
 .post-content {
   text-align: center;
   display: inline-block;
-  width: 30%;
+  width: 50%;
   margin-top: 4%;
 
   header {
@@ -193,7 +200,7 @@ article {
 }
 
 .posted-circle {
-  background: #39CFAA;
+  background: $published;
   width: 90px;
   height: 90px;
   border-radius: 100%;
@@ -202,8 +209,9 @@ article {
   text-align: center;
   font-size: 1.3em;
   padding-top: 8px;
-  margin-left: 29%;
+  margin-left: 16%;
   display: inline-block;
+  color: #FFF;
 
   span {
     display: block;
@@ -216,22 +224,21 @@ article {
   display: block;
   margin: 15px auto 0px;
   padding: 3px 20px;
-  border: 2px solid #9EABB3;
+  background: $published;
   text-decoration: none;
   text-align: center;
-  color: #9EABB3;
+  color: #FFF;
   border-radius: 30px;
   width: 150px;
-  opacity: 0.7;
-}
-
-.read-more:hover {
   opacity: 1;
 }
 
+.read-more:hover {
+  opacity: 0.7;
+}
+
 .pagination {
-  background: $background;
-  color: #F2EFE8;
+  color: #000;
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -243,31 +250,27 @@ article {
 .page-number {
   margin-top: 10px;
   border: 2px solid;
-  border-color: #F2EFE8;
+  border-color: #000;
   opacity: 0.8;
   padding: 3px 10px;
 }
 
-.older-posts {
+.button {
   display: inline-block;
   padding: 0px 15px;
-  border: 2px solid #F2EFE8;
+  border: 2px solid #000;
   text-decoration: none;
   border-radius: 30px;
-  color: #F2EFE8;
+  color: #000;
   position: absolute;
+}
+
+.older-posts {
   right: 0;
   margin-right: 50px;
 }
 
 .newer-posts {
-  display: inline-block;
-  padding: 0px 15px;
-  border: 2px solid #F2EFE8;
-  text-decoration: none;
-  border-radius: 30px;
-  color: #F2EFE8;
-  position: absolute;
   left: 0;
   margin-left: 50px;
 }
