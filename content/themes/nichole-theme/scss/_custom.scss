@@ -1,11 +1,12 @@
 $body-color: #3A4145;
+$background: #343434;
 
 body {
   height: 100%;
   max-height: 100%;
   line-height: 1.6em;
   color: $body-color;
-  background: grey;
+  background: $background;
 }
 
 html {
@@ -55,6 +56,12 @@ html {
   color: $body-color;
 }
 
+.post-template {
+  .header {
+    display: none;
+  }
+}
+
 nav {
   width: 15%;
   float: left;
@@ -64,6 +71,16 @@ nav {
     text-align: center;
     width: 100%;
     margin-top: 10%;
+
+    a {
+      color: #7C8188;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: #FFF;
+      cursor: pointer;
+    }
   }
 }
 
@@ -74,7 +91,7 @@ nav {
   margin-bottom: 0rem;
   float: right;
   display: table;
-  background: #FFF;
+  background: #F2EFE8;
 }
 
 .inner-content {

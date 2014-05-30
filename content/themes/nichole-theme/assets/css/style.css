@@ -520,7 +520,7 @@ body {
   max-height: 100%;
   line-height: 1.6em;
   color: #3A4145;
-  background: grey; }
+  background: #343434; }
 
 html {
   height: 100%;
@@ -557,6 +557,9 @@ html {
   background: #FFF;
   color: #3A4145; }
 
+.post-template .header {
+  display: none; }
+
 nav {
   width: 15%;
   float: left; }
@@ -565,6 +568,12 @@ nav {
     text-align: center;
     width: 100%;
     margin-top: 10%; }
+    nav ul a {
+      color: #7C8188;
+      text-decoration: none; }
+    nav ul a:hover {
+      color: #FFF;
+      cursor: pointer; }
 
 #content {
   position: relative;
@@ -573,7 +582,7 @@ nav {
   margin-bottom: 0rem;
   float: right;
   display: table;
-  background: #FFF; }
+  background: #F2EFE8; }
 
 .inner-content {
   margin-left: 16%;
