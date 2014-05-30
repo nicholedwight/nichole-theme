@@ -46,12 +46,14 @@
         {{! Output the content of the header partial template }}
         {{> header}}
 
+        <!-- Static Menu (Dynamic menu not yet available in Ghost 0.3) -->
+        {{> navigation}}
+
         <section id="content">
-          <!-- Static Menu (Dynamic menu not yet available in Ghost 0.3) -->
-          {{> navigation}}
+
 
             {{! The 'inner' divs provide a nice wrapper for content to help with fluidity and responsiveness }}
-            <div id="inner-content" class="wrap clearfix inner-content">
+            <div id="blog" class="wrap clearfix inner-content">
 
                 {{! The main section uses eight columns in the grid framework }}
                 <main id="main" class="eightcol first clearfix" role="main">

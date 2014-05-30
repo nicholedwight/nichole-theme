@@ -5,6 +5,7 @@ body {
   max-height: 100%;
   line-height: 1.6em;
   color: $body-color;
+  background: grey;
 }
 
 html {
@@ -52,6 +53,28 @@ html {
 .theme-button:hover {
   background: #FFF;
   color: $body-color;
+}
+
+nav {
+  width: 15%;
+  float: left;
+
+  ul {
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    margin-top: 10%;
+  }
+}
+
+#content {
+  position: relative;
+  width: 85%;
+  height: 100%;
+  margin-bottom: 0rem;
+  float: right;
+  display: table;
+  background: #FFF;
 }
 
 .inner-content {
