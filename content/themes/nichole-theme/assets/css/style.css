@@ -520,7 +520,7 @@ body {
   max-height: 100%;
   line-height: 1.6em;
   color: #3A4145;
-  background: #343434; }
+  background: #1C2024; }
 
 html {
   height: 100%;
@@ -565,7 +565,7 @@ html {
   background: #FFF;
   color: #3A4145; }
 
-.post-template .header {
+.post-template .header, .archive-template .header {
   display: none; }
 
 .aside-nav {
@@ -637,10 +637,68 @@ nav ul {
   height: 100%; }
 
 article:nth-of-type(even) {
-  background: purple; }
+  background: #343434;
+  color: #F2EFE8; }
+
+article {
+  min-height: 300px; }
 
 .post-content {
-  margin-left: 10%; }
+  text-align: center; }
+
+.read-more {
+  display: block;
+  margin: 15px auto 0px;
+  padding: 3px 20px;
+  border: 2px solid #9EABB3;
+  text-decoration: none;
+  text-align: center;
+  color: #9EABB3;
+  border-radius: 30px;
+  width: 150px;
+  opacity: 0.7; }
+
+.read-more:hover {
+  opacity: 1; }
+
+.pagination {
+  background: #1C2024;
+  color: #F2EFE8;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  height: 80px;
+  padding-top: 15px; }
+
+.page-number {
+  margin-top: 10px;
+  border: 2px solid;
+  border-color: #F2EFE8;
+  opacity: 0.8;
+  padding: 3px 10px; }
+
+.older-posts {
+  display: inline-block;
+  padding: 0px 15px;
+  border: 2px solid #F2EFE8;
+  text-decoration: none;
+  border-radius: 30px;
+  color: #F2EFE8;
+  position: absolute;
+  right: 0;
+  margin-right: 50px; }
+
+.newer-posts {
+  display: inline-block;
+  padding: 0px 15px;
+  border: 2px solid #F2EFE8;
+  text-decoration: none;
+  border-radius: 30px;
+  color: #F2EFE8;
+  position: absolute;
+  left: 0;
+  margin-left: 50px; }
 
 .footer {
   position: relative;
