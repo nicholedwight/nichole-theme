@@ -1,13 +1,21 @@
 {{! This partial will list a post excerpt using the 'excerpt' theme helper in Ghost }}
   <article class="post hentry {{post_class}}">
+    <div class="posted-circle">
+      <time datetime="{{date published_at format="YYYY-MM-DD"}}">
+        {{date published_at format="DD"}}
+        <span id="month-stamp">{{date published_at format="MMMM"}}</span>
+        {{date published_at format="YY"}}
+      </time>
+    </div>
     <div class="post-content"?>
+
       <header class="h2 entry-title">
           <a href="{{url}}" rel="bookmark">{{title}}</a>
       </header>
-
+<!--
       <time class="updated" datetime="2012-05-03">
           {{date published_at format="MMMM DD, YYYY"}}
-      </time>
+      </time> -->
 
       {{#if tags}}
           <span class="amp">&amp;</span>
@@ -15,7 +23,7 @@
       {{/if}}
 
       <section class="entry-content clearfix">
-          {{excerpt}}... <a href="{{url}}" class="read-more">Read More</a>
+          {{excerpt characters="140"}}... <a href="{{url}}" class="read-more">Read More</a>
       </section>
     </div>
   </article> <!-- end list article  -->

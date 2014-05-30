@@ -644,7 +644,32 @@ article {
   min-height: 300px; }
 
 .post-content {
-  text-align: center; }
+  text-align: center;
+  display: inline-block;
+  width: 30%;
+  margin-top: 4%; }
+  .post-content header {
+    font-size: 26px; }
+    .post-content header a {
+      text-decoration: none;
+      color: inherit; }
+
+.posted-circle {
+  background: #39CFAA;
+  width: 90px;
+  height: 90px;
+  border-radius: 100%;
+  vertical-align: top;
+  margin-top: 6%;
+  text-align: center;
+  font-size: 1.3em;
+  padding-top: 8px;
+  margin-left: 29%;
+  display: inline-block; }
+  .posted-circle span {
+    display: block;
+    font-size: 1.5em;
+    text-transform: uppercase; }
 
 .read-more {
   display: block;
