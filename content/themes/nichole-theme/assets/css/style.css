@@ -568,6 +568,16 @@ html {
 .post-template .header {
   display: none; }
 
+.aside-nav {
+  float: left;
+  width: 15%;
+  height: 100%;
+  position: relative; }
+
+#personal-logo {
+  display: block;
+  margin: 15px auto; }
+
 nav ul {
   margin: 0 auto;
   text-align: center;
@@ -592,12 +602,6 @@ nav ul {
 .inner-content {
   margin-left: 16%;
   height: 100%; }
-
-.aside-nav {
-  float: left;
-  width: 15%;
-  height: 100%;
-  position: relative; }
 
 .footer {
   position: relative;

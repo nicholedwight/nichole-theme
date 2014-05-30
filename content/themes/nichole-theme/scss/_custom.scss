@@ -74,6 +74,18 @@ html {
   }
 }
 
+.aside-nav {
+  float: left;
+  width: 15%;
+  height: 100%;
+  position: relative;
+}
+
+#personal-logo {
+  display: block;
+  margin: 15px auto;
+}
+
 nav {
 
   ul {
@@ -107,13 +119,6 @@ nav {
 .inner-content {
   margin-left: 16%;
   height: 100%;
-}
-
-.aside-nav {
-  float: left;
-  width: 15%;
-  height: 100%;
-  position: relative;
 }
 
 .footer {
