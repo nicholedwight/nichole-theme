@@ -532,6 +532,7 @@ html {
   height: 100%;
   margin-bottom: 0rem;
   background-image: url('/../assets/images/soporific.jpg');
+  /* http://speedrahul.deviantart.com/art/Soporific-203792216 */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -569,6 +570,12 @@ html {
   background: #FFF;
   color: #3A4145; }
 
+.logo-container {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  margin: -20px auto 50px; }
+
 .spin_me {
   margin: auto;
   margin-top: 1em;
@@ -581,11 +588,19 @@ html {
   -o-transition-property: -o-transform;
   transition-property: transform;
   overflow: hidden; }
+  .spin_me:hover {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    opacity: 0.3; }
+  .spin_me:hover + .spin-logo {
+    visibility: visible; }
 
-.spin_me:hover {
-  -webkit-transform: rotate(360deg);
-  -moz-transform: rotate(360deg);
-  -o-transform: rotate(360deg); }
+.spin-logo {
+  position: absolute;
+  left: 0;
+  margin: 40px 0 0 25px;
+  visibility: hidden; }
 
 .post-template .header, .archive-template .header {
   display: none; }
