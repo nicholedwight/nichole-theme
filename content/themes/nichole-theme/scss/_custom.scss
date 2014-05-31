@@ -165,7 +165,8 @@ html {
 }
 
 .aside-nav {
-  display: none;
+  display: inline;
+  width: 100%;
 
   @include mq(ML) {
   display: block;
@@ -178,21 +179,37 @@ html {
 }
 
 #personal-logo {
+  display: none;
+
+  @include mq(ML) {
   display: block;
   margin: 45px auto;
+  }
 }
 
 nav {
 
   ul {
-    margin: 0 auto;
+    margin: 9px auto;
     text-align: center;
     width: 100%;
+
+    @include mq(ML) {
     margin-top: 30%;
+    margin: 0 auto;
+    }
 
     li {
-      margin-bottom: 10px;
+      display: inline-block;
+      width: 100px;
 
+      @include mq(S) {
+        width: 95px;
+      }
+      @include mq(ML) {
+      margin-bottom: 10px;
+      width: 100%;
+      }
       a {
         color: #F2EFE8;
         text-decoration: none;
@@ -208,11 +225,15 @@ nav {
   }
 }
 #social-navigation {
+  display: none;
+
+  @include mq(ML) {
+  display: inline;
   position: absolute;
   bottom: 0px;
   margin-bottom: 55px;
   width: 100%;
-
+  }
   @include mq(LL) {
     margin-bottom: 35px;
   }
@@ -234,6 +255,7 @@ nav {
   display: inline-block;
   margin: 0px 1px 0px 0px;
   line-height: 1em;
+  width: 33px;
 
   a {
     display: block;
@@ -254,6 +276,10 @@ nav {
 }
 
 .copyright {
+  display: none;
+
+  @include mq(ML) {
+  display: block;
   position: absolute;
   bottom: 0;
   margin-bottom: 5px;
@@ -261,6 +287,7 @@ nav {
   width: 100%;
   color: #FFF;
   opacity: 0.8;
+  }
 }
 
 #content {

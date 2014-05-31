@@ -643,7 +643,8 @@ html {
   display: none; }
 
 .aside-nav {
-  display: none; }
+  display: inline;
+  width: 100%; }
   @media only screen and (min-width: 56.25em) {
     .aside-nav {
       display: block;
@@ -654,16 +655,30 @@ html {
       background: #2fc09c; } }
 
 #personal-logo {
-  display: block;
-  margin: 45px auto; }
+  display: none; }
+  @media only screen and (min-width: 56.25em) {
+    #personal-logo {
+      display: block;
+      margin: 45px auto; } }
 
 nav ul {
-  margin: 0 auto;
+  margin: 9px auto;
   text-align: center;
-  width: 100%;
-  margin-top: 30%; }
+  width: 100%; }
+  @media only screen and (min-width: 56.25em) {
+    nav ul {
+      margin-top: 30%;
+      margin: 0 auto; } }
   nav ul li {
-    margin-bottom: 10px; }
+    display: inline-block;
+    width: 100px; }
+    @media only screen and (min-width: 18.75em) {
+      nav ul li {
+        width: 95px; } }
+    @media only screen and (min-width: 56.25em) {
+      nav ul li {
+        margin-bottom: 10px;
+        width: 100%; } }
     nav ul li a {
       color: #F2EFE8;
       text-decoration: none;
@@ -674,10 +689,14 @@ nav ul {
       cursor: pointer; }
 
 #social-navigation {
-  position: absolute;
-  bottom: 0px;
-  margin-bottom: 55px;
-  width: 100%; }
+  display: none; }
+  @media only screen and (min-width: 56.25em) {
+    #social-navigation {
+      display: inline;
+      position: absolute;
+      bottom: 0px;
+      margin-bottom: 55px;
+      width: 100%; } }
   @media only screen and (min-width: 69.563em) {
     #social-navigation {
       margin-bottom: 35px; } }
@@ -695,7 +714,8 @@ nav ul {
 .social-item {
   display: inline-block;
   margin: 0px 1px 0px 0px;
-  line-height: 1em; }
+  line-height: 1em;
+  width: 33px; }
   .social-item a {
     display: block;
     border: 1px solid white;
@@ -711,13 +731,17 @@ nav ul {
     opacity: 1; }
 
 .copyright {
-  position: absolute;
-  bottom: 0;
-  margin-bottom: 5px;
-  text-align: center;
-  width: 100%;
-  color: #FFF;
-  opacity: 0.8; }
+  display: none; }
+  @media only screen and (min-width: 56.25em) {
+    .copyright {
+      display: block;
+      position: absolute;
+      bottom: 0;
+      margin-bottom: 5px;
+      text-align: center;
+      width: 100%;
+      color: #FFF;
+      opacity: 0.8; } }
 
 #content {
   width: 100%;
