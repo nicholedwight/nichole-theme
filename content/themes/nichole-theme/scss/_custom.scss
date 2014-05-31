@@ -8,6 +8,7 @@ body {
   line-height: 1.6em;
   color: $body-color;
   background: $background;
+  font-family: "Lato", "HelveticaNeue", Helvetica, sans-serif;
 }
 
 html {
@@ -341,4 +342,19 @@ article {
   width: 100%;
   color: #FFF;
   opacity: 0.8;
+}
+
+
+/* Page/Full-Post CSS */
+
+.article-header {
+  text-align: center;
+  font-size: 1.7em;
+}
+
+.entry-content {
+  width: 90%;
+  margin: 0 auto;
+  font-size: 1.4em;
+  line-height: 1.2em;
 }

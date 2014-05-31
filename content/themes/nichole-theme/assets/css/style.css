@@ -520,7 +520,8 @@ body {
   max-height: 100%;
   line-height: 1.6em;
   color: #3A4145;
-  background: #2fc09c; }
+  background: #2fc09c;
+  font-family: "Lato", "HelveticaNeue", Helvetica, sans-serif; }
 
 html {
   height: 100%;
@@ -784,6 +785,17 @@ article {
   width: 100%;
   color: #FFF;
   opacity: 0.8; }
+
+/* Page/Full-Post CSS */
+.article-header {
+  text-align: center;
+  font-size: 1.7em; }
+
+.entry-content {
+  width: 90%;
+  margin: 0 auto;
+  font-size: 1.4em;
+  line-height: 1.2em; }
 
 /*
  * Foundation Icons v 3.0

@@ -7,6 +7,31 @@
 
 {{#post}}
 
-    {{> full-post}}
+    <article class="hentry clearfix {{post_class}}" role="article">
+
+        <header class="article-header">
+
+            <h1 class="h2">
+                {{title}}
+            </h1>
+
+
+        </header> <!-- end article header -->
+
+        <section class="entry-content clearfix">
+            {{content}}
+        </section> <!-- end article section -->
+
+        <footer class="article-footer">
+            {{#if tags}}
+                <p class="tags">
+                    <span class="tags-title">
+                        Tags: {{tags}}
+                    </span>
+                </p>
+            {{/if}}
+        </footer> <!-- end article footer -->
+
+    </article>
 
 {{/post}}
