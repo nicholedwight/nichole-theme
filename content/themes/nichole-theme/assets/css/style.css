@@ -558,7 +558,17 @@ html {
   border-top: 1px solid rgba(255, 255, 255, 0.14); }
 .home-template .header-title {
   text-decoration: none;
-  color: #3A4145; }
+  color: #FFF;
+  text-shadow: 0.3px 0.3px 0.5px #000; }
+.home-template .header-byline {
+  width: 45%;
+  margin: 0 auto;
+  color: #FFF;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+  text-shadow: 0.3px 0.3px 0.5px #000; }
 
 .theme-button {
   text-decoration: none;
@@ -636,7 +646,7 @@ nav ul {
 #social-navigation {
   position: absolute;
   bottom: 0px;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
   width: 100%; }
 
 .social-links {

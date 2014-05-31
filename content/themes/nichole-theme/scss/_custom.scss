@@ -58,7 +58,19 @@ html {
 
   .header-title {
     text-decoration: none;
-    color: $body-color;
+    color: #FFF;
+    text-shadow: 0.3px 0.3px 0.5px #000;
+  }
+
+  .header-byline {
+    width: 45%;
+    margin: 0 auto;
+    color: #FFF;
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+    text-shadow: 0.3px 0.3px 0.5px #000;
   }
 }
 .theme-button {
@@ -162,7 +174,7 @@ nav {
 #social-navigation {
   position: absolute;
   bottom: 0px;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
   width: 100%;
 }
 
