@@ -106,3 +106,22 @@ jQuery(document).ready(function($) {
     w.addEventListener( "orientationchange", restoreZoom, false );
     w.addEventListener( "devicemotion", checkTilt, false );
 })( this );
+
+
+//Smooth Scroll
+$(function() {
+			    $('.smoothscroll').bind('click',function(event){
+			        var $anchor = $(this);
+
+			        $('html, body').stop().animate({
+			            scrollTop: $($anchor.attr('href')).offset().top-0
+			        }, 700,'easeInOutExpo');
+			        /*
+			        if you don't want to use the easing effects:
+			        $('html, body').stop().animate({
+			            scrollTop: $($anchor.attr('href')).offset().top
+			        }, 1000);
+			        */
+			        event.preventDefault();
+			    });
+			});
