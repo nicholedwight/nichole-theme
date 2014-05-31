@@ -125,3 +125,15 @@ $(function() {
 			        event.preventDefault();
 			    });
 			});
+
+
+//Comment show
+$(document).ready(function(){
+  $('html').addClass('js');
+
+  $('#disqus_thread').addClass('hidden');
+  $(".show-comments").on( "click", function() {
+    $('#disqus_thread').toggleClass('hidden');
+  });
+
+});

@@ -162,7 +162,7 @@ nav {
 #social-navigation {
   position: absolute;
   bottom: 0px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   width: 100%;
 }
 
@@ -202,6 +202,16 @@ nav {
   }
 }
 
+.copyright {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 5px;
+  text-align: center;
+  width: 100%;
+  color: #FFF;
+  opacity: 0.8;
+}
+
 #content {
   position: relative;
   width: 85%;
@@ -225,7 +235,7 @@ article:nth-of-type(odd) {
 }
 
 article {
-  min-height: 200px;
+  padding-bottom: 60px;
 }
 
 .post-content {
@@ -241,6 +251,10 @@ article {
       text-decoration: none;
       color: inherit;
     }
+  }
+
+  .entry-content {
+    font-size: 1.3em;
   }
 }
 
@@ -335,17 +349,25 @@ article {
   position: absolute;
 }
 
-.copyright {
-  position: absolute;
-  bottom: 0;
-  text-align: center;
-  width: 100%;
-  color: #FFF;
-  opacity: 0.8;
-}
-
 
 /* Page/Full-Post CSS */
+
+.hidden {
+  display: none;
+}
+
+.show-comments {
+  text-align: center;
+  font-size: 0.8em;
+  position: absolute;
+  left: 0;
+  margin-left: 43%;
+}
+
+#disqus_thread {
+  width: 50%;
+  margin: 30px auto;
+}
 
 .article-header {
   text-align: center;
