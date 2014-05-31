@@ -531,7 +531,11 @@ html {
   width: 100%;
   height: 100%;
   margin-bottom: 0rem;
-  background-color: #39CFAA;
+  background-image: url('/../assets/images/soporific.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
   display: table; }
 .home-template .vertical-theme-header {
   display: table-cell;
