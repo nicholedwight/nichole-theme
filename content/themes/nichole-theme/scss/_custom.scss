@@ -34,6 +34,7 @@ html {
   .vertical-theme-header {
     display: table-cell;
     vertical-align: middle;
+    background: rgba(0, 0, 0, 0.2);
   }
 
   .inner-theme-header {
@@ -60,8 +61,7 @@ html {
     font-size: 1.5em;
     text-decoration: none;
     color: #FFF;
-    text-shadow: 0.3px 0.3px 0.5px #000;
-  }
+    }
 
   .header-byline {
     font-size: 1.2em;
@@ -72,8 +72,7 @@ html {
     -moz-hyphens: none;
     -ms-hyphens: none;
     hyphens: none;
-    text-shadow: 0.3px 0.3px 0.5px #000;
-  }
+    }
 }
 .theme-button {
   text-decoration: none;
