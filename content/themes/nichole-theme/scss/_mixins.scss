@@ -124,3 +124,45 @@ probably best not to use it. I mean, were you going to anyway? */
 	-ms-box-sizing:     $type;
 	box-sizing:         $type;
 }
+
+//MY MIXINS
+
+$XS: 12.5em; // 200px
+$S: 18.75em; // 300px
+$SM: 35em; // 560px
+$M: 47.5em; // 760px
+$ML: 56.250em; // 900px
+$L: 63em; // 1008px
+$LL: 69.563em; // 1116px;
+$XL: 110em; // 1760px
+$XXL: 180em; // 2880px
+
+@mixin mq($canvas) {
+   @if $canvas == XS {
+    @media only screen and (min-width: $XS) { @content; }
+  }
+  @else if $canvas == S {
+    @media only screen and (min-width: $S) { @content; }
+  }
+  @else if $canvas == SM {
+    @media only screen and (min-width: $SM) { @content; }
+  }
+  @else if $canvas == M {
+    @media only screen and (min-width: $M) { @content; }
+  }
+  @else if $canvas == ML {
+    @media only screen and (min-width: $ML) { @content; }
+  }
+  @else if $canvas == L {
+    @media only screen and (min-width: $L) { @content; }
+  }
+  @else if $canvas == LL {
+    @media only screen and (min-width: $LL) { @content; }
+  }
+  @else if $canvas == XL {
+    @media only screen and (min-width: $XL) { @content; }
+  }
+  @else if $canvas == XXL {
+    @media only screen and (min-width: $XXL) { @content; }
+  }
+}
