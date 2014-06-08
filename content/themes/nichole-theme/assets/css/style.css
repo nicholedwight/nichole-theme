@@ -591,6 +591,31 @@ html {
     .home-template .header-byline {
       font-size: 1.2em;
       width: 45%; } }
+.home-template #social-navigation {
+  display: none; }
+  @media only screen and (min-width: 56.25em) {
+    .home-template #social-navigation {
+      display: inline;
+      position: absolute;
+      bottom: 0px;
+      margin-bottom: 55px;
+      width: 100%; } }
+  @media only screen and (min-width: 69.563em) {
+    .home-template #social-navigation {
+      margin-bottom: 35px; } }
+.home-template .copyright {
+  display: none; }
+  @media only screen and (min-width: 56.25em) {
+    .home-template .copyright {
+      display: block;
+      position: absolute;
+      bottom: 0;
+      margin-bottom: 5px;
+      text-align: center;
+      color: #FFF;
+      opacity: 0.8;
+      bottom: 0;
+      width: 95%; } }
 
 .theme-button {
   text-decoration: none;
@@ -693,10 +718,11 @@ nav ul {
   @media only screen and (min-width: 56.25em) {
     #social-navigation {
       display: inline;
-      position: absolute;
+      position: fixed;
       bottom: 0px;
+      left: 0;
       margin-bottom: 55px;
-      width: 100%; } }
+      width: 15%; } }
   @media only screen and (min-width: 69.563em) {
     #social-navigation {
       margin-bottom: 35px; } }
@@ -735,13 +761,14 @@ nav ul {
   @media only screen and (min-width: 56.25em) {
     .copyright {
       display: block;
-      position: absolute;
+      position: fixed;
       bottom: 0;
       margin-bottom: 5px;
       text-align: center;
-      width: 100%;
       color: #FFF;
-      opacity: 0.8; } }
+      opacity: 0.8;
+      bottom: 0;
+      margin-left: 5px; } }
 
 #content {
   width: 100%;
