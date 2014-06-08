@@ -229,10 +229,11 @@ nav {
 
   @include mq(ML) {
   display: inline;
-  position: absolute;
+  position: fixed;
   bottom: 0px;
+  left: 0;
   margin-bottom: 55px;
-  width: 100%;
+  width: 15%;
   }
   @include mq(LL) {
     margin-bottom: 35px;
@@ -280,13 +281,14 @@ nav {
 
   @include mq(ML) {
   display: block;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   margin-bottom: 5px;
   text-align: center;
-  width: 100%;
   color: #FFF;
   opacity: 0.8;
+  bottom: 0;
+  margin-left: 5px;
   }
 }
 
