@@ -1,0 +1,56 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', 'body-parser@1.6.3' ]
+2 info using npm@2.0.0-alpha-5
+3 info using node@v0.10.31
+4 verbose node symlink /usr/local/bin/node
+5 verbose readDependencies using package.json deps
+6 verbose cache add [ 'body-parser@1.6.3', null ]
+7 verbose cache add spec="body-parser@1.6.3" args=["body-parser@1.6.3",null]
+8 verbose parsed spec { raw: 'body-parser@1.6.3',
+8 verbose parsed spec   scope: null,
+8 verbose parsed spec   name: 'body-parser',
+8 verbose parsed spec   rawSpec: '1.6.3',
+8 verbose parsed spec   spec: '1.6.3',
+8 verbose parsed spec   type: 'version' }
+9 verbose addNamed [ 'body-parser', '1.6.3' ]
+10 verbose addNamed [ '1.6.3', '1.6.3' ]
+11 silly lockFile 8e298403-body-parser-1-6-3 body-parser@1.6.3
+12 verbose lock body-parser@1.6.3 /Users/Nichole/.npm/8e298403-body-parser-1-6-3.lock
+13 verbose mapToRegistry name body-parser
+14 verbose mapToRegistry uri http://registry.npmjs.eu/body-parser
+15 verbose request where is /body-parser
+16 verbose request registry http://registry.npmjs.eu/
+17 verbose request id 1fec1b217e82cb43
+18 verbose request url raw /body-parser
+19 verbose request url resolving [ 'http://registry.npmjs.eu/', './body-parser' ]
+20 verbose request url resolved http://registry.npmjs.eu/body-parser
+21 verbose request where is http://registry.npmjs.eu/body-parser
+22 verbose request no basic auth needed
+23 info trying registry request attempt 1 at 14:52:30
+24 verbose etag "53e3aa59-1148a"
+25 http GET http://registry.npmjs.eu/body-parser
+26 http 304 http://registry.npmjs.eu/body-parser
+27 silly registry.get cb [ 304,
+27 silly registry.get   { server: 'nginx/1.5.0',
+27 silly registry.get     date: 'Wed, 17 Sep 2014 13:52:30 GMT',
+27 silly registry.get     connection: 'keep-alive',
+27 silly registry.get     'last-modified': 'Thu, 07 Aug 2014 16:33:29 GMT',
+27 silly registry.get     etag: '"53e3aa59-1148a"',
+27 silly registry.get     expires: 'Thu, 07 Aug 2014 16:48:29 GMT',
+27 silly registry.get     'cache-control': 'no-cache' } ]
+28 verbose etag http://registry.npmjs.eu/body-parser from cache
+29 silly lockFile 8e298403-body-parser-1-6-3 body-parser@1.6.3
+30 silly lockFile 8e298403-body-parser-1-6-3 body-parser@1.6.3
+31 error Error: version not found: body-parser@1.6.3
+31 error     at setData (/usr/local/lib/node_modules/npm/lib/cache/add-named.js:127:12)
+31 error     at saved (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/get.js:167:7)
+31 error     at Object.oncomplete (fs.js:107:15)
+32 error If you need help, you may report this *entire* log,
+32 error including the npm and node versions, at:
+32 error     <http://github.com/npm/npm/issues>
+33 error System Darwin 13.3.0
+34 error command "node" "/usr/local/bin/npm" "install" "body-parser@1.6.3"
+35 error cwd /Users/Nichole/Sites/nichole
+36 error node -v v0.10.31
+37 error npm -v 2.0.0-alpha-5
+38 verbose exit [ 1, true ]
